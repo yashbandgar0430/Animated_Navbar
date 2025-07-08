@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+}
+
+.animated-navbar {
+  background-color: #343a40;
+  transition: top 0.3s;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.1);
+}
+
+.hero {
+  padding: 120px 20px;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  animation: slideIn 1s ease-in-out;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-bar {
+  display: none;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.search-bar.show {
+  display: block;
+  animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #222 !important;
+}
+
+.dark-mode .nav-link {
+  color: #fff !important;
+}
+
+.dark-mode .hero {
+  background: linear-gradient(to right, #333, #222);
+}
+.category-card {
+  transition: transform 0.4s ease;
+}
+.category-card:hover {
+  transform: scale(1.05);
+}
+.hover-animate {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hover-animate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
